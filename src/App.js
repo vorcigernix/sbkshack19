@@ -21,18 +21,20 @@ class App extends Component {
   render() {
     return (
       <div>
-      
-        <Suspense fallback={<Loading />}>
+        
+        
           <Grommet theme={theme}>
-            <Nav />
+          <Nav />
+          <Suspense fallback={<Loading />}>
             <Router>
-            <Home path="/" />
-            <Mentors path="/mentors" />
+              <Home path="/" />
+              <Mentors path="/mentors" />
             </Router>
+            </Suspense>
           </Grommet>
-        </Suspense>
-      
+       
       </div>
+
     );
   }
 }
