@@ -53,7 +53,7 @@ class Nav extends Component {
                                 direction='row'
                                 align='start'
                                 pad='medium'
-                                background="linear-gradient(102.77deg, #F44336 , #E91E63, #9C27B0)"
+                                background='linear-gradient(102.77deg, #F44336 , #E91E63, #9C27B0)'
                                 elevation='medium'
                                 height='small'
                             >
