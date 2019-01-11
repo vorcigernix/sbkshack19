@@ -3,7 +3,6 @@ import { Box, Heading, Text, Paragraph } from 'grommet';
 
 const sbksgradient = "linear-gradient(102.77deg, #9C27B0, #666DE9)";
 const NewsItem = (props) => {
-    console.log(props.news.fields)
     return (
         <div>
             {props.news.fields ? (

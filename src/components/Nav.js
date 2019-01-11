@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Heading, Box, Text, ResponsiveContext, Button } from 'grommet';
 import { Link } from "@reach/router";
-import { Menu as MenuIcon } from 'grommet-icons';
+import { Menu as MenuIcon, Launch as LaunchIcon } from 'grommet-icons';
 
 const StyledLink = props => <Link style={{ textDecoration: 'none', fontWeight: 600 }} {...props} />;
 
@@ -58,7 +58,10 @@ class Nav extends Component {
                                 height='small'
                             >
                                 <Heading level={2} margin='none' color='white'>
-                                    Hackathon
+                                    <StyledLink to='/' >
+                                      <LaunchIcon size='large' color='white' />  
+                                    </StyledLink>
+                                     Love Code
                                 </Heading>
                                 <LinkPane direction='row' gap='medium' />
 

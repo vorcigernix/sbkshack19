@@ -12,7 +12,10 @@ const theme = {
     colors: {
       brand: '#96285F',
       dark: '#2F3744',
-      rhino: '#7B8694'
+      rhino: '#7B8694',
+      almostwhite: '#E8EAEC',
+      sbksorange:'#F44336',
+      sbkspurple: '#9C27B0'
     },
     font: {
       family: 'Roboto',
