@@ -27,7 +27,6 @@ class Home extends React.Component {
         })
             .then((response) => {
                 this.setState({ data: response.items })
-                console.log(this.state.data)
             })
             .catch(console.error)
 

@@ -1,8 +1,7 @@
 import React from 'react'
 import { Box, Heading, Image, Paragraph } from 'grommet';
 
-const MentorList = (props) => {
-    console.log(props.list.fields.profilePicture.fields.file.url)
+const MentorItem = (props) => {
     return (
         <div>
             {props.list.fields ? (
@@ -26,7 +25,7 @@ const MentorList = (props) => {
                         }
                         <Box>
                             <Heading
-                                color='rhino'
+                                color='sbksorange'
                                 level='4'
                                 margin='medium'
                             >
@@ -47,4 +46,4 @@ const MentorList = (props) => {
 
 
 
-export default MentorList
+export default MentorItem

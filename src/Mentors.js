@@ -1,7 +1,7 @@
 import { Box } from 'grommet';
 import React from 'react';
 import { createClient } from 'contentful';
-import  MentorList  from './components/MentorList';
+import  MentorItem from './components/MentorItem';
 
 
 const SPACE_ID = process.env.REACT_APP_SPACE_ID
@@ -27,7 +27,6 @@ class Mentors extends React.Component {
         })
             .then((response) => {
                 this.setState({ data: response.items })
-                console.log(this.state.data)
             })
             .catch(console.error)
 
@@ -42,8 +41,9 @@ class Mentors extends React.Component {
                 {this.state.data.map(pplItem => (
                     <Box 
                     key={pplItem.sys.id}
+                    direction="row-responsive"
                     >
-                        <MentorList list={pplItem} />
+                        <MentorItem list={pplItem} />
                     </Box>
                 ))}
             </Box>

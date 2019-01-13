@@ -103,7 +103,7 @@ class Nav extends Component {
                                         pad='medium'
 
                                     >
-                                        <Button icon={<MenuIcon />} onClick={this.toggleSidebar}></Button>
+                                        <Button icon={<MenuIcon color='sbksorange' />} onClick={this.toggleSidebar}></Button>
                                         <LinkPane gap='large' margin='large' />
                                     </Box>
                                 }

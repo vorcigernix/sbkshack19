@@ -6,6 +6,7 @@ import Loading from './Loading';
 
 const Home = React.lazy(() => import('./Home'));
 const Mentors = React.lazy(() => import('./Mentors'));
+const Schedule = React.lazy(() => import('./Schedule'));
 
 const theme = {
   global: {
@@ -37,6 +38,7 @@ class App extends Component {
             <Router>
               <Home path="/" />
               <Mentors path="/mentors" />
+              <Schedule path="/schedule" />
             </Router>
           </Suspense>
         </Grommet>
