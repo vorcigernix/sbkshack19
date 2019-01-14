@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Required setup
+Running the code depends on contentful CMS. You need to create your own instance and than copy your SPACE_ID and TOKEN to your .env file (or generally, the environment). Basic instance is for free. You can read more about API used [here](https://www.contentful.com/developers/docs/references/content-management-api/). You will also need to create a structure same to mine or modify each view (referenced in router in app.js)
+
 ## Available Scripts
 
 In the project directory, you can run:

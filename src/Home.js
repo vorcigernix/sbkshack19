@@ -1,7 +1,7 @@
 import { Box } from 'grommet';
 import React from 'react';
 import { createClient } from 'contentful';
-import  NewsItem  from './components/NewsItem';
+import NewsItem from './components/NewsItem';
 
 
 const SPACE_ID = process.env.REACT_APP_SPACE_ID
@@ -36,10 +36,13 @@ class Home extends React.Component {
         return (
             <Box
                 direction="row-responsive"
-                margin='small'
-                gap='medium'>
+                alignContent='center'
+                justify='between'
+                wrap
+                >
                 {this.state.data.map(newsItem => (
                     <Box 
+                    width='medium'
                     key={newsItem.sys.id}
                     >
                         <NewsItem news={newsItem} />

@@ -16,6 +16,7 @@ const theme = {
       rhino: '#7B8694',
       almostwhite: '#E8EAEC',
       sbksorange:'#F44336',
+      sbkstomato:'#FF9262',
       sbkspurple: '#9C27B0'
     },
     font: {
