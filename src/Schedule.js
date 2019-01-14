@@ -14,12 +14,7 @@ const client = createClient({
 
 
 class Mentors extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            data: [],
-        };
-    }
+    state = { data: [] };
 
     componentDidMount() {
         client.getEntries({
@@ -60,7 +55,7 @@ class Mentors extends React.Component {
                                 </Heading>
                             </Box>
                                 {eventItem.fields.events.map(sceventItem => (
-                                    <ScheduleItem key={sceventItem.sys.id} list={sceventItem}></ScheduleItem>
+                                    <ScheduleItem key={sceventItem.sys.id} list={sceventItem} />
                                 ))
                                 }
                             </Box>

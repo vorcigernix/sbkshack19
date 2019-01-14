@@ -42,7 +42,7 @@ class Home extends React.Component {
                 >
                 {this.state.data.map(newsItem => (
                     <Box 
-                    width='medium'
+                    basis='1/3'
                     key={newsItem.sys.id}
                     >
                         <NewsItem news={newsItem} />
