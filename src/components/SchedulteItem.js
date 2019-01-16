@@ -13,7 +13,10 @@ function getMinute(date) {
 
 const ScheduleItem = (props) => {
     return (
-        <Box direction='row' align='baseline' margin='medium'>
+        <Box direction='row' 
+        align='baseline' 
+        margin='medium'
+        >
             <Box direction='row' width='xsmall' align='baseline'>
             <Heading level='2' color='sbksorange'>{getHour(props.list.fields.time)}</Heading>
             <Heading level='4' color='sbksorange'>{getMinute(props.list.fields.time)}</Heading>

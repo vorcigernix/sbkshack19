@@ -7,14 +7,14 @@ const MentorItem = (props) => {
             {props.list.fields ? (
                 <Box
                     elevation='small'
-                    round='small'
-                    basis='1/4'
-                    height='medium'
+                    round='xsmall'
                     overflow='hidden'
+                    margin='small'
+                    background='almostwhite'
                 >
                     <Box
                         height='small'
-                        round={{ "size": "small", "corner": "top" }}
+                        round={{ "size": "xsmall", "corner": "top" }}
                         direction='row'
 
                     >
@@ -26,15 +26,14 @@ const MentorItem = (props) => {
                         <Box>
                             <Heading
                                 color='sbksorange'
-                                level='4'
+                                level='1'
                                 margin='medium'
                             >
                                 {props.list.fields.fullName}
                             </Heading>
                         </Box>
                     </Box>
-                    <Box pad='xsmall' background='white'></Box>
-                    <Box fill>
+                    <Box height='small'>
                         <Paragraph size='small' margin='medium'>{props.list.fields.description}</Paragraph>
                     </Box>
                 </Box>

@@ -35,6 +35,7 @@ class Mentors extends React.Component {
                     <Box
                         key={eventItem.sys.id}
                         width='large'
+                        
                     >
                         {eventItem &&
                            <Box
@@ -43,12 +44,13 @@ class Mentors extends React.Component {
                            justify='between'
                            align='start'
                            pad='medium'
+                           background='almostwhite'
                            elevation='medium'
                        >
                             <Box direction='column'>
                                 <Heading
                                     color='sbksorange'
-                                    level='4'
+                                    level='1'
                                     margin='medium'
                                 >
                                     {eventItem.fields.header}

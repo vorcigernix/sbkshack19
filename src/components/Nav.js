@@ -57,7 +57,7 @@ class Nav extends Component {
                                 elevation='medium'
                                 height='small'
                             >
-                                <Heading level={2} margin='none' color='white'>
+                                <Heading level={1} margin='none' color='white'>
                                     <StyledLink to='/' >
                                       <LaunchIcon size='large' color='white' />  
                                     </StyledLink>

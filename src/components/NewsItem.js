@@ -11,25 +11,27 @@ const NewsItem = (props) => {
             {props.news.fields ? (
                 <Box
                     elevation='small'
-                    round='small'
+                    round='xsmall'
+                    background='almostwhite'
                 >
                     <Box
-                        background={props.news.fields.image ? 'url(' + props.news.fields.image.fields.file.url + ')' : sbksgradient}
-                        height='xsmall'
-                        round={{ "size": "small", "corner": "top" }}
+                        height='8rem'
+                        round={{ "size": "xsmall", "corner": "top" }}
+                    
+                        overflow='hidden'
+                        
 
                     >
                         <Heading
-                            color='white'
-                            level='4'
+                            level='1'
                             margin='medium'
+                            color='sbksorange'
 
                         >
                             {props.news.fields.title}
                         </Heading>
                     </Box>
                     <Box height='medium'>
-                        <Box pad='xsmall' background='white'><Text color='dark' size='small'>{props.news.fields.tags[0]}/{props.news.fields.tags[1]}</Text> </Box>
                         <Box fill
                             overflow='hidden'>
                             <Paragraph size='small' margin='medium'>{props.news.fields.description}</Paragraph>
