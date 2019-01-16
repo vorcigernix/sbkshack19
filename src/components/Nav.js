@@ -85,7 +85,7 @@ class Nav extends Component {
                                     >
                                         <Button icon={<MenuIcon color='white' />} onClick={this.toggleSidebar}></Button>
                                         <Heading level={2} margin='none' color='white'>
-                                        <StyledLink to='/' >
+                                        <StyledLink to='/' color='sbkstomato' >
                                              Hackathon 
                                         </StyledLink>
                                     </Heading>
