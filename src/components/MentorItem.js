@@ -33,8 +33,8 @@ const MentorItem = (props) => {
                             </Heading>
                         </Box>
                     </Box>
-                    <Box height='small'>
-                        <Paragraph size='small' margin='medium'>{props.list.fields.description}</Paragraph>
+                    <Box height='small' justify='start' background='dark' >
+                        <Paragraph  margin='medium'>{props.list.fields.description}</Paragraph>
                     </Box>
                 </Box>
             ) : null}

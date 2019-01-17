@@ -15,7 +15,7 @@ const NewsItem = (props) => {
                     background='almostwhite'
                 >
                     <Box
-                        height='8rem'
+                        height='9rem'
                         round={{ "size": "xsmall", "corner": "top" }}
                     
                         overflow='hidden'
@@ -33,8 +33,10 @@ const NewsItem = (props) => {
                     </Box>
                     <Box height='medium'>
                         <Box fill
-                            overflow='hidden'>
-                            <Paragraph size='small' margin='medium'>{props.news.fields.description}</Paragraph>
+                            overflow='hidden' 
+                            background='dark'
+                            >
+                            <Paragraph  margin='medium'>{props.news.fields.description}</Paragraph>
                         </Box>
                     </Box>
                 </Box>
