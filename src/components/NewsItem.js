@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Paragraph } from "grommet";
+import { Box, Heading, Paragraph, Text } from "grommet";
 
 const NewsItem = props => {
   return (
@@ -12,17 +12,35 @@ const NewsItem = props => {
             background="linear-gradient(180deg, #E8EAEC 30% , #fff, #fff)"
             overflow="hidden"
           >
-            <Heading level="3" margin="medium" color="sbksorange">
+            <Heading
+              level="3"
+              margin={{
+                top: "medium",
+                bottom: "small",
+                left: "medium",
+                right: "medium"
+              }}
+              color="sbksorange"
+            >
               {props.news.fields.title}
             </Heading>
-          </Box>
-          {props.news.fields.subtitle && (
-            <Box>
-              <Paragraph margin="medium">
+            {props.news.fields.subtitle && (
+              <Text
+                size="small"
+                weight="bold"
+                color="rhino"
+                margin={{
+                  top: "small",
+                  bottom: "small",
+                  left: "medium",
+                  right: "medium"
+                }}
+              >
                 {props.news.fields.subtitle}
-              </Paragraph>
-            </Box>
-          )}
+              </Text>
+            )}
+          </Box>
+
           <Box height="medium">
             <Box
               fill
