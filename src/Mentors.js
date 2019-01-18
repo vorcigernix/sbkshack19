@@ -37,11 +37,13 @@ class Mentors extends React.Component {
         return (
             <Box
                 direction="row-responsive"
+                
                 >
                 {this.state.data.map(pplItem => (
                     <Box
-                        key={pplItem.sys.id}
+                        key={pplItem.sys.id ? pplItem.sys.id : (Math.floor(Math.random()*1000000)) }
                         direction="row-responsive"
+                        basis='1/4'
                     >
                         <MentorItem list={pplItem} />
                     </Box>

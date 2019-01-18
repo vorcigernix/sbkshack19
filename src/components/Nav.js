@@ -48,7 +48,7 @@ class Nav extends Component {
                         return (
                             <Box
                                 round='small'
-                                margin='small'
+                                margin={{'top':'small','bottom':'medium','left':'small','right':'small'}}
                                 justify='between'
                                 direction='row'
                                 align='start'

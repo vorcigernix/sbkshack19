@@ -1,29 +1,27 @@
 import React from 'react'
 import { Box, Heading, Text, Paragraph } from 'grommet';
 
-const sbksgradient = "linear-gradient(102.77deg, #9C27B0, #666DE9)";
 const NewsItem = (props) => {
     return (
-        <Box 
-        margin='small'
+        <Box
+            margin='small'
+            background='white'
+            round='xsmall'
+            elevation='small'
         >
-            
+
             {props.news.fields ? (
-                <Box
-                    elevation='small'
-                    round='xsmall'
-                    background='almostwhite'
+                <Box   
                 >
                     <Box
-                        height='9rem'
+                        height='7rem'
                         round={{ "size": "xsmall", "corner": "top" }}
-                    
+                        background='linear-gradient(180deg, #E8EAEC 30% , #fff, #fff)'
                         overflow='hidden'
-                        
 
                     >
                         <Heading
-                            level='1'
+                            level='3'
                             margin='medium'
                             color='sbksorange'
 
@@ -33,10 +31,11 @@ const NewsItem = (props) => {
                     </Box>
                     <Box height='medium'>
                         <Box fill
-                            overflow='hidden' 
-                            background='dark'
-                            >
-                            <Paragraph  margin='medium'>{props.news.fields.description}</Paragraph>
+                            overflow='hidden'
+                            background='white'
+                            round={{ "size": "xsmall", "corner": "bottom" }}
+                        >
+                            <Paragraph margin='medium'>{props.news.fields.description}</Paragraph>
                         </Box>
                     </Box>
                 </Box>

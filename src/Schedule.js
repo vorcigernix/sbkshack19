@@ -33,7 +33,7 @@ class Mentors extends React.Component {
             direction="row-responsive">
                 {this.state.data.map(eventItem => (
                     <Box
-                        key={eventItem.sys.id}
+                        key={eventItem.sys.id ? eventItem.sys.id : (Math.floor(Math.random()*1000000)) }
                         width='large'
                         
                     >

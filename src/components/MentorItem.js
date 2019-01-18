@@ -10,11 +10,13 @@ const MentorItem = (props) => {
                     round='xsmall'
                     overflow='hidden'
                     margin='small'
-                    background='almostwhite'
+                    background='white'
                 >
                     <Box
-                        height='small'
+                        height='8rem'
                         round={{ "size": "xsmall", "corner": "top" }}
+                        background='linear-gradient(180deg, #E8EAEC 30% , #fff, #fff)'
+                        overflow='hidden'
                         direction='row'
 
                     >
@@ -26,14 +28,19 @@ const MentorItem = (props) => {
                         <Box>
                             <Heading
                                 color='sbksorange'
-                                level='1'
+                                level='3'
                                 margin='medium'
                             >
                                 {props.list.fields.fullName}
                             </Heading>
                         </Box>
                     </Box>
-                    <Box height='small' justify='start' background='dark' >
+                    <Box
+                    
+                    overflow='hidden'
+                    background='white'
+                    height='medium'
+                    >
                         <Paragraph  margin='medium'>{props.list.fields.description}</Paragraph>
                     </Box>
                 </Box>

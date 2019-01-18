@@ -38,13 +38,13 @@ class Home extends React.Component {
             <Box
                 direction="row-responsive"
                 alignContent='center'
-                justify='between'
+                justify='start'
                 wrap
             >
                         {this.state.data.map(newsItem => (
                             <Box
-                                basis='1/3'
-                                key={newsItem.sys.id}
+                                basis='1/4'
+                                key={newsItem.sys.id ? newsItem.sys.id : (Math.floor(Math.random()*1000000)) }
                             >
                                 <NewsItem news={newsItem} />
                             </Box>
