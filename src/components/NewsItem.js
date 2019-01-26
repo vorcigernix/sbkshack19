@@ -21,6 +21,7 @@ const NewsItem = props => {
                 right: "medium"
               }}
               color="sbksorange"
+              responsive={false}
             >
               {props.news.fields.title}
             </Heading>
