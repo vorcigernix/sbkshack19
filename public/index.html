@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="Description"
-      content="One of great events you don't want to miss in Prague. Work on nice topics and meet great people (including our Mentors)"
-    />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="Description" content="One of great events you don't want to miss in Prague. Work on nice topics and meet great people (including our Mentors)"
+  />
 
-    <title>Hackathon</title>
-    <style type="text/css">
-      body {
-        margin: 0;
-        background: #2f3744;
-      }
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-      @font-face {
-        font-family: "Roboto";
-        font-display: auto;
-        src: local("Roboto"),
-          url("https://fonts.googleapis.com/css?family=Roboto:300,400,500")
-            format("woff2");
-      }
-    </style>
-  </head>
+  <title>Hackathon</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      background: #2f3744;
+    }
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+    /* roboto-300 - latin */
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Roboto Light'), local('Roboto-Light'),
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* roboto-regular - latin */
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Roboto'), local('Roboto-Regular'),
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-regular.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* roboto-500 - latin */
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      src: local('Roboto Medium'), local('Roboto-Medium'),
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('%PUBLIC_URL%/roboto-v18-latin/roboto-v18-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>
