@@ -8,8 +8,6 @@ const NewsItem = props => {
         <Box>
           <Box
             height="7rem"
-            round={{ size: "xsmall", corner: "top" }}
-            background="linear-gradient(180deg, #E8EAEC 30% , #fff, #fff)"
             overflow="hidden"
           >
             <Heading

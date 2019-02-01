@@ -70,10 +70,8 @@ function registerValidSW(swUrl, config) {
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
               console.log(
-                'New content is available and will be used when all ' +
-                  'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
+                'New content is available, reloading..'
               );
-
               // Execute callback
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
